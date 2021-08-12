@@ -1,0 +1,170 @@
+:root {
+  --veryDarkBlue: hsl(233, 47%, 7%);
+  --darkDesaturatedBlue: hsl(244, 38%, 16%);
+  --softViolet: hsl(277, 64%, 61%);
+  --white: hsl(0, 0%, 100%);
+  --slightlyTransparentWhite: hsla(0, 0%, 100%, 0.75);
+  --slightlyTransparentWhite2: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  color: var(--white);
+}
+
+body {
+  background-color: var(--veryDarkBlue);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: var(--darkDesaturatedBlue);
+  max-width: 100%;
+  width: 74rem;
+  height: 30rem;
+  margin: 0 2.666rem;
+  border-radius: 0.666rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 8rem 4.333rem 5rem;
+  width: 51%;
+  max-width: ;
+}
+
+.card-stats {
+  width: 100%;
+  display: flex;
+  gap: 4rem;
+  margin-top: 2em;
+  list-style: none;
+}
+
+.text h1,
+.text p {
+  padding-bottom: 2rem;
+}
+
+/* HEADLINES */
+h1 {
+  font-weight: 700;
+  font-size: 2.3rem;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+span {
+  color: var(--softViolet);
+  font-weight: 700;
+  font-size: 2.3rem;
+}
+
+p {
+  color: var(--slightlyTransparentWhite);
+  line-height: 2rem;
+}
+
+.stats p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: var(--slightlyTransparentWhite2);
+  padding-top: 0.333rem;
+}
+
+/* IMAGE */
+.card-image {
+  width: 49%;
+  height: 30rem;
+
+  background-blend-mode: multiply;
+  background-image: url(../images/image-header-desktop.jpg);
+  background-color: var(--softViolet);
+  background-size: cover;
+}
+
+/* FOOTER */
+footer {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 2rem;
+}
+
+footer a {
+  color: var(--softViolet);
+  font-size: 0.8rem;
+}
+
+footer p {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 1180px) {
+  main {
+    max-width: 25rem;
+    height: 56rem;
+
+    flex-direction: column-reverse;
+  }
+
+  .card-image {
+    width: 100%;
+    height: 16rem;
+  }
+
+  .card-text {
+    padding: 3rem 3rem;
+
+    width: 100%;
+    height: 40rem;
+
+    text-align: center;
+  }
+
+  .card-stats {
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 0;
+  }
+
+  .text h1 {
+    padding-bottom: 2rem;
+  }
+
+  .text p {
+    padding-bottom: 2.5rem;
+    line-height: 1.8rem;
+  }
+
+  .stats p {
+    line-height: 2.3rem;
+    padding-top: 0;
+  }
+
+  /* HEADLINES */
+  h1 {
+    font-size: 2rem;
+  }
+
+  span {
+    font-size: 2rem;
+  }
+}
