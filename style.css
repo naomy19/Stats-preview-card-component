@@ -96,7 +96,7 @@ p {
   height: 30rem;
 
   background-blend-mode: multiply;
-  background-image: url(../images/image-header-desktop.jpg);
+  background-image: url(images/image-header-desktop.jpg);
   background-color: var(--softViolet);
   background-size: cover;
 }
